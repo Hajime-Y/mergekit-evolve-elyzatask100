@@ -1,0 +1,11 @@
+genome:
+    models:
+      - NTQAI/chatntq-ja-7b-v1.0
+      - TFMC/Japanese-Starling-ChatV-7B
+      - Aratako/Antler-7B-RP-v2
+    merge_method: linear
+    layer_granularity: 4 # sane default
+    allow_negative_weights: true # useful with task_arithmetic
+tasks:
+  - name: elyzatasks100
+    weight: 1.0
