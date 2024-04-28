@@ -45,10 +45,13 @@ login(userdata.get("HF_TOKEN"))
     --wandb
 ```
 
-### 最終モデルの生成
+### 最終モデルの生成とHuggingFaceへの保存
 ```
 # 最終モデルの生成
 !mergekit-yaml ../evol_merge_storage/best_config.yaml --cuda ../final_merge
+
+# HuggingFaceへの保存
+!huggingface-cli upload HachiML/Swallow-MS-7b-MergeEvol-fevals105 ../final_merge .
 ```
 
 ## 前提
