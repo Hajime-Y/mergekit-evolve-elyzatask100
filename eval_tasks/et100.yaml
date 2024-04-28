@@ -1,0 +1,22 @@
+task: elyzatasks100
+dataset_path: arrow
+dataset_kwargs:
+  data_files:
+    test: /content/slice_et100_10/test/data-00000-of-00001.arrow
+output_type: generate_until
+training_split: null
+test_split: test
+# doc_to_text プロンプト生成
+doc_to_text: !function et100_metric.generate_prompt
+doc_to_target: ""
+#process_results スコア計算
+process_results: !function et100_metric.process_results
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true
+# generation_kwargs model.generateのパラメータ
+generation_kwargs:
+  do_sample: false
+  temperature: 0.7
+  max_gen_toks: 1500

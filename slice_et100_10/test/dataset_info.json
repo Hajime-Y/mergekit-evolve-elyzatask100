@@ -1,0 +1,46 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "elyza-tasks-100",
+  "dataset_size": 115831,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/elyza/ELYZA-tasks-100@240fc800c4695d86ce0f32a713e199cd2ba66ab6/test.csv": {
+      "num_bytes": 115490,
+      "checksum": null
+    }
+  },
+  "download_size": 115490,
+  "features": {
+    "input": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "output": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "eval_aspect": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 231321,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 115831,
+      "num_examples": 100,
+      "dataset_name": "elyza-tasks-100"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
