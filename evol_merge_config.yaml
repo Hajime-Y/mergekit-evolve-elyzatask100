@@ -3,7 +3,9 @@ genome:
       - tokyotech-llm/Swallow-MS-7b-v0.1
       - Nexusflow/Starling-LM-7B-beta
       - mistralai/Mistral-7B-Instruct-v0.2
-    merge_method: linear
+    merge_method: dare_ties
+    base_model: tokyotech-llm/Swallow-MS-7b-v0.1
+    tokenizer_source: base
     layer_granularity: 4 # sane default
     allow_negative_weights: true # useful with task_arithmetic
 tasks:
