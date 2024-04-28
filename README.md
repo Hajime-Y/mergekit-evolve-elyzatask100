@@ -1,5 +1,10 @@
 # mergekit-evolve-elyzatask100
 
+## 参照
+うみゆき先生、npaka先生のコードを参照しています。  
+ - [Mergekit-Evolve登場！進化的アルゴリズムで手元のLLMを最強進化させよう！](https://soysoftware.sakura.ne.jp/archives/3872)
+ - [Google Colab で mergekit-evolve による 進化的モデルマージ を試す](https://note.com/npaka/n/n42129c043026?sub_rt=share_h)
+
 ## Google Colabでの使用方法
 ### パッケージのインストール
 ```
@@ -40,7 +45,8 @@ login(userdata.get("HF_TOKEN"))
     --wandb
 ```
 
-## 参照
-うみゆき先生、npaka先生のコードを参照しています。  
- - [Mergekit-Evolve登場！進化的アルゴリズムで手元のLLMを最強進化させよう！](https://soysoftware.sakura.ne.jp/archives/3872)
- - [Google Colab で mergekit-evolve による 進化的モデルマージ を試す](https://note.com/npaka/n/n42129c043026?sub_rt=share_h)
+### 最終モデルの生成
+```
+# 最終モデルの生成
+!mergekit-yaml ../evol_merge_storage/best_config.yaml --cuda ../final_merge
+```
