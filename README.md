@@ -1,6 +1,6 @@
 # mergekit-evolve-elyzatask100
 
-## how to use in Google Colab
+## Google Colabでの使用方法
 ### パッケージのインストール
 ```
 # パッケージのインストール
