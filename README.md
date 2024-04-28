@@ -39,3 +39,7 @@ login(userdata.get("HF_TOKEN"))
     --merge-cuda \
     --wandb
 ```
+
+## 参照
+npaka先生のコードを参照しています。  
+[Google Colab で mergekit-evolve による 進化的モデルマージ を試す](https://note.com/npaka/n/n42129c043026?sub_rt=share_h)
