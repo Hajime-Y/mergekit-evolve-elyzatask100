@@ -2,7 +2,7 @@ task: elyzatasks100
 dataset_path: arrow
 dataset_kwargs:
   data_files:
-    test: /content/slice_et100_10/test/data-00000-of-00001.arrow
+    test: /content/mergekit-evolve-elyzatask100/slice_et100_10/test/data-00000-of-00001.arrow
 output_type: generate_until
 training_split: null
 test_split: test
