@@ -50,3 +50,6 @@ login(userdata.get("HF_TOKEN"))
 # 最終モデルの生成
 !mergekit-yaml ../evol_merge_storage/best_config.yaml --cuda ../final_merge
 ```
+
+## 前提
+ - このコードはGoogleのGemini ProのAPI Keyが必要です。Gemini ProのAPI Keyは[Google AI Studio](https://aistudio.google.com/app/apikey)から取得が可能です。
